@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, Button, FlatList, Text, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';  // Import the useNavigation hook
+import { useNavigation } from '@react-navigation/native';  
 
 function HomeScreen() {
   const [task, setTask] = useState('');
   const [taskItems, setTaskItems] = useState([]);
-  const navigation = useNavigation();  // Get the navigation object
+  const navigation = useNavigation();  
 
   const handleAddTask = () => {
     if (task.trim() !== "") {
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   taskItem: {
-    flex: 1, // Allows text to fill the space, pushing delete button to the edge
+    flex: 1, 
   },
   deleteButton: {
     backgroundColor: 'red',
