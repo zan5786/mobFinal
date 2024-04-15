@@ -7,14 +7,14 @@ function NotesScreen() {
 
     const handleSaveNote = () => {
         if (note.trim() !== '') {
-            setNotes([...notes, note]);  // Add the current note to the notes array
-            setNote('');  // Clear the current note input after saving
+            setNotes([...notes, note]);  
+            setNote(''); 
         } else {
             alert('Please enter a note!');
         }
     };
 
-    // Function to handle deletion of a note
+    
     const handleDeleteNote = (index) => {
         const newNotes = notes.filter((item, idx) => idx !== index);
         setNotes(newNotes);
